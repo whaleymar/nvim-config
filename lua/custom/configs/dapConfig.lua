@@ -21,6 +21,14 @@ local config = {
       },
     },
   },
+  go = {
+    {
+      type = "delve",
+      name = "Debug",
+      request = "launch",
+      program = "${file}",
+    },
+  },
 }
 
 local adapters = {
@@ -28,6 +36,14 @@ local adapters = {
     id = "cppdbg",
     type = "executable",
     command = "/home/whaley/code/nvim-bin/extension/debugAdapters/bin/OpenDebugAD7",
+  },
+  delve = {
+    type = "server",
+    port = "${port}",
+    executable = {
+      command = "dlv",
+      args = { "dap", "-l", "127.0.0.1:${port}" },
+    },
   },
 }
 

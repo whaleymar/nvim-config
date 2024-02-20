@@ -5,5 +5,5 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
-
+vim.wo.relativenumber = true
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])

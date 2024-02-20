@@ -12,6 +12,13 @@ M.general = {
       end,
       "formatting",
     },
+    ["<leader>lo"] = {
+      function()
+        vim.diagnostic.open_float(0, { scope = "line" })
+      end,
+      "LSP message to window",
+      opts = { nowait = true },
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },

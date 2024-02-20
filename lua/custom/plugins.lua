@@ -4,6 +4,17 @@ local overrides = require "custom.configs.overrides"
 ---@type NvPluginSpec[]
 local plugins = {
   {
+    "leoluz/nvim-dap-go",
+    ft = "go",
+    -- event = "VeryLazy",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+    },
+    -- config = function()
+    --   require("dap-go").setup()
+    -- end,
+  },
+  {
     "rcarriga/nvim-dap-ui",
     event = "VeryLazy",
     dependencies = "mfussenegger/nvim-dap",

@@ -38,6 +38,9 @@ M.mason = {
     "clangd",
     "clang-format",
     "codelldb",
+
+    -- golang
+    "gopls",
   },
 }
 
