@@ -26,6 +26,7 @@ lspconfig.gopls.setup {
       usePlaceholders = true, -- autofills function args with placeholders
       analyses = {
         unusedparams = true,
+        composites = false,
       },
     },
   },
