@@ -42,6 +42,12 @@ M.mason = {
 
     -- golang
     "gopls",
+
+    -- python
+    "pyright",
+
+    -- glsl
+    "glsl_analyzer",
   },
 }
 
@@ -58,6 +64,10 @@ M.nvimtree = {
         git = true,
       },
     },
+  },
+
+  view = {
+    adaptive_size = true, -- grow/shrink pane width automatically
   },
 }
 
