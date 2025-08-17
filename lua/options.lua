@@ -19,3 +19,11 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.bo.commentstring = "// %s"
     end,
 })
+
+-- recognize custom file extensions
+vim.filetype.add {
+    extension = {
+        frag = "glsl",
+        vert = "glsl",
+    },
+}
